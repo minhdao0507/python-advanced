@@ -2,7 +2,9 @@ from urllib import response
 from django.shortcuts import render
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from .models import Question, Choice
-from django.template import loader, get_object_or_404, reverse
+from django.template import loader
+from django.shortcuts import get_object_or_404
+from django.urls import reverse
 
 # Create your views here.
 
