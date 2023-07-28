@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(to bottom right, #BEEBF1, #f3accca2);
+    height:100vh;
+    overflow: hidden;
+    font-family: monospace;
+}
+
+.header{
+    height: 10vh;
+    font-size: 1.3rem;
+    
+}
+
+.navbar{
+    height: 100%;
+}
+.nav-item{
+    padding-left: 20px;
+}
+
+.main{
+    height: 80vh;
+
+}
+
+.text-center{
+    margin: 20px 0;
+}
+
+.choose{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+input{
+    width: 100px;
+}
+
+label{
+    margin-right: 5px;
+}
+.select{
+    width: fit-content;
+}
+.button{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+}
+

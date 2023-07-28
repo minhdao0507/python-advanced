@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="#">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <script src="{% static 'home.js' %}"></script>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Nhóm 4</a>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="main container">
+        <div class="text-center">
+            <h1>CAR PRICE PREDICTION</h1>
+        </div>
+        <div class="form">
+            {%csrf_token%}
+            <div class="row">
+                <div class="choose col-2">
+                    <label for="carname" >Car name:</label>
+                    <input type="text" id="carname">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="wheelbase" >Wheelbase:</label>
+                    <input type="text" id="wheelbase">
+                </div>
+
+                <div class="choose col-3">
+                    <label for="carlength" >Car length:</label>
+                    <input type="text" id="carlength">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="carwidth" >Car width:</label>
+                    <input type="text" id="carwidth">
+                </div>
+
+                <div class="choose col-3">
+                    <label for="carheight" >Car height:</label>
+                    <input type="text" id="carheight">
+                </div>         
+            </div>
+            <div class="row">
+                <div class="choose col-2">
+                    <label for="curbweight" >Curbweight:</label>
+                    <input type="text" id="curbweight">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="enginesize" >Enginesize:</label>
+                    <input type="text" id="enginesize">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="boreratio" >Boreratio:</label>
+                    <input type="text" id="boreratio">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="stroke" >Stroke:</label>
+                    <input type="text" id="stroke">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="compressionratio" >Compressionratio:</label>
+                    <input type="text" id="compressionratio">
+                </div>
+            </div>
+            <div class="row">
+                <div class="choose col-2">
+                    <label for="horsepower" >Horsepower:</label>
+                    <input type="text" id="horsepower">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="peakrpm" >Peakrpm:</label>
+                    <input type="text" id="peakrpm">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="citympg" >Citympg:</label>
+                    <input type="text" id="citympg">
+                </div>
+
+                <div class="choose col-2">
+                    <label for="highwaympg" >Highwaympg:</label>
+                    <input type="text" id="highwaympg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="choose col-2">
+                    <label >Symboling:</label>
+                    <div class="select ">
+                        <select id="symboling" class="form-select form-select-sm" >
+                            <option value="0" selected>0</option>
+                            <option value="-1">-1</option>
+                            <option value="-2">-2</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="choose col-2">
+                    <label>Fueltype:</label>
+                    <div class="select">
+                        <select id="fueltype" class="form-select form-select-sm" >
+                            <option value="gas" selected>Gas</option>
+                            <option value="diesel">Diesel</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choose col-2">
+                    <label >Aspiration:</label>
+                    <div  class="select">
+                        <select id="aspiration" class="form-select form-select-sm" >
+                            <option value="std" selected>Std</option>
+                            <option value="turbo">Turbo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choose col-2">
+                    <label >Door number:</label>
+                    <div class="select">
+                        <select id="doornumber" class="form-select form-select-sm" >
+                            <option value="two" selected>Two</option>
+                            <option value="four">Four</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choose col-3">
+                    <label >Car body:</label>
+                    <div class="select">
+                        <select id="carbody" class="form-select form-select-sm" >
+                            <option value="convertible" selected>Convertible</option>
+                            <option value="hatchback">Hatchback</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="wagon">Wagon</option>
+                            <option value="hardtop">Hardtop</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="choose col-2">
+                    <label >Drivewheel:</label>
+                    <div class="select">
+                        <select id="drivewheel" class="form-select form-select-sm" >
+                            <option value="rwd" selected>rwd</option>
+                            <option value="fwd">fwd</option>
+                            <option value="4wwd">4wwd</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choose col-3">
+                    <label >Enginelocation:</label>
+                    <div class="select">
+                        <select id="enginelocation" class="form-select form-select-sm" >
+                            <option value="front" selected>front</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choose col-2">
+                    <label >Enginetype:</label>
+                    <div class="select">
+                        <select id="enginetype" class="form-select form-select-sm" >
+                            <option value="dohc" selected>dohc</option>
+                            <option value="ohcv">ohcv</option>
+                            <option value="ohc">ohc</option>
+                            <option value="rotor">rotor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choose col-3">
+                    <label >Cylindernumber:</label>
+                    <div class="select">
+                        <select id="cylindernumber" class="form-select form-select-sm" >
+                            <option value="three" selected>three</option>
+                            <option value="four">four</option>
+                            <option value="five">five</option>
+                            <option value="six">six</option>
+                            <option value="eight">eight</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choose col-2">
+                    <label >Fuelsystem:</label>
+                    <div class="select">
+                        <select id="fuelsystem" class="form-select form-select-sm" >
+                            <option value="mpfi" selected>mpfi</option>
+                            <option value="2bbl">2bbl</option>
+                            <option value="1bbl">1bbl</option>
+                            <option value="4bbl">4bbl</option>
+                            <option value="idi">idi</option>
+                            <option value="spdi">spdi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button id="predict">Predict</button>
+        </div>
+        <div class="show">
+            <label for="price">Predicted price: </label>
+            <input type="text" id="price_pred" disabled>
+        </div>
+    </div>
+    <div class="footer text-center">
+        <a href="">&copy;NHOM 4</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+Xây dựng ứng dụng Quiz Game với các chức năng sau:
+Login/logout/Sign in hệ thống (sử dụng session và database)
+Sau khi login thì hiển thị màn hình hỏi user nhập vào số câu hỏi muốn chơi rồi bấm OK để xác nhận.
+Lần lượt các câu hỏi trên màn hình (có phân trang các câu hỏi) dưới dạng Multiple Choise question. 
+Khi người dùng chọn đáp án và bấm nút Submit thì trả về kết quả đúng hoặc sai.
+Khi người dùng bấm Finish thì đưa ra kết quả cuối cùng: 
+Số câu đúng: …
+Số câu sai: …
+Tổng số câu hỏi đã chơi: …
+Khi bấm nút Reset thì chơi lại từ đầu.
+
+DS câu hỏi:
+Câu 1: Giải Grand Slam đầu tiên trong năm là giải nào?
+A. Austrlia mở rộng
+B. Wimbledon
+C. Roland Garos
+D. Mỹ mở rộng
+Trong môn quần vợt, giành được Grand Slam nghĩa là trong 1 năm đoạt chức vô địch cả 4 giải sau:
+* Úc mở rộng
+* Pháp mở rộng
+* Wimbledon
+* Mỹ mở rộng
+Câu 2: Cùng với Hà Nội T&T (vô địch V-League 2010), CLB nào của Việt Nam tham dự AFC Cup 2011?
+A. Sông Lam Nghệ An
+B. SHB Đà Nẵng
+C. Hoàng Anh Gia Lai
+D. Becamex Bình Dương
+Câu 3: AFC Asian Cup 2011 được tổ chức tại quốc gia nào?
+A. Qatar
+B. Hàn Quốc
+C. Nhật Bản
+D. Iraq
+Câu 4: Đội nào lên ngôi vô địch AFC Asian Cup 2011 tổ chức tại Qatar?
+A. Nhật Bản
+B. Australia
+C. Hàn Quốc
+D. Uzbekistan
+Câu 5: Ai là nhạc sĩ Việt Nam đầu tiên viết opera với tác phẩm “Cô sao” và sau đó là “Người tạc tượng”?
+A. Đỗ Nhuận
+B. Hoàng Vân
+C. Trần Hoàn
+D. Trọng Đài
+Câu 6: Sông Bến Hải và sông Thạch Hãn nằm ở tỉnh nào?
+A. Quảng Bình
+B. Quảng Ninh
+C. Quảng Trị
+D. Quảng Ngãi
+Câu 7: Trong các cây cầu sau, cầu nào là cầu xoay?
+A. Cầu Thanh Trì
+B. Cầu Thị Nại
+C. Cầu Sông Hàn
+D. Cầu Cần Thơ
+Câu 8: Đại Ngu là quốc hiệu của triều đại nào?
+A. Triều Ngô
+B. Triều Hồ
+C. Các chúa Nguyễn
+D. Nhà Tây Sơn
+Tháng 3-1400, Hồ Quý Ly phế Trần Thiếu Ðế, lập ra nhà Hồ và cho đổi tên nước thành Ðại Ngu ("ngu" tiếng cổ có nghĩa là "sự yên vui"). Quốc hiệu đó tồn tại đến khi giặc Minh đánh bại triều Hồ (tháng 4 -1407).
+Câu 9: Các vua Hùng đặt quốc hiệu nước ta là gì?
+A. Văn Lang
+B.  u Lạc
+C. Vạn Xuân
+D. Đại Việt
+Câu 10: An Dương Vương đặt quốc hiệu nước ta là gì?
+A.  u Lạc
+B. Vạn Xuân
+C. Đại Cồ Việt
+D. Đại Việt

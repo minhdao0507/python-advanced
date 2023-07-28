@@ -1,0 +1,73 @@
+{% extends "home.html" %}
+{% load static %}
+{%block title%}
+    <title>My project</title>
+{%endblock%}
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'project.css' %}">
+{% endblock %}    
+{%block main%}
+<div class="main-pro">
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="{%static 'pro1_1.png'%}" alt="">
+            </div>
+            <div class="slide ">
+                <img src="{%static 'pro1_2.png'%}" alt="">
+            </div>
+            <div class="slide ">
+                <img src="{%static 'pro1_3.png'%}" alt="">
+            </div>
+            <div class="slide ">
+                <img src="{%static 'pro1_4.png'%}" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <div class="content">
+        <h1>My {{my_project.name}}</h1>
+        <div class="about-pro">
+            <h3>About the project:</h3>
+            <p>{{my_project.about_pro}}</p>
+        </div>
+        <div class="tech-used">
+            <h3>Technology used:</h3>
+            <p>{{my_project.tech_used}}</p>
+        </div>
+        <div class="source">
+            <h3>Reference source:</h3>
+            <a href="https://mui.com/">{{my_project.source}}</a>
+        </div>
+    </div>
+</div>
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio'+ counter).checked = true;
+            counter++;
+            if (counter>4){
+                counter=1
+            }
+        }, 3000);
+    </script>
+{%endblock%}
+

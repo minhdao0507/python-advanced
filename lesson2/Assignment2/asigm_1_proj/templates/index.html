@@ -1,0 +1,14 @@
+{% if person_list %}
+    <ul>
+        {% for p in person_list %}
+            <li>
+                <a href="{% url 'asigm_1_proj:detail' p.id%}"> 
+                    {{p.name}}
+                </a>
+            </li>
+        {%endfor%}
+    </ul>
+{%else%}
+    <p>No person are available.</p>
+{%endif%}
+<a href="{%url 'asigm_1_proj:adduser' %}">Add new User</a>
